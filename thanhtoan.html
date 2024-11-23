@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Thanh toan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar start -->
+        <div class="container-fluid bg-white" style="position: sticky; top: 0; z-index: 1000;">
+            <div class="container mt-3">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="trangchu.html" class="navbar-brand"><h1 class="text-primary display-6">SHOP ĐCHPH</h1></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="#" class="nav-item nav-link">Apple</a>
+                            <a href="#" class="nav-item nav-link">Sam sung</a>
+                            <a href="#" class="nav-item nav-link">Xiaomi</a>
+                            <a href="#" class="nav-item nav-link">Vivo</a>
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <form class="me-4">
+                                <div class="input-group d-flex">
+                                    <input type="search" class="form-control" placeholder="Nhập từ khóa" name="">
+                                    <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                            <a href="giohang.html" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-cart fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="dangnhap.html" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Thanh toán Start -->
+        <div class="container-fluid">
+            <div class="container py-5">
+                <h1 class="mb-4">Chi tiết thanh toán</h1>
+                <form action="#">
+                    <div class="row g-5">
+                        <div class="col-md-12 col-lg-6 col-xl-5 pe-5">
+                            <div>
+                                <label class="form-label my-3">Họ và tên<sup>*</sup></label>
+                                <input type="text" name="HoTen" class="form-control">
+                            </div>
+                            <div>
+                                <label class="form-label my-3">Địa chỉ nhận hàng <sup>*</sup></label>
+                                <input type="text" name="DiaChi" class="form-control">
+                            </div>
+                            <div>
+                                <label class="form-label my-3">Điện thoại<sup>*</sup></label>
+                                <input type="text" name="DienThoai" class="form-control">
+                            </div>
+                            <div>
+                                <label class="form-label my-3">Phương thức thanh toán<sup>*</sup></label>
+                                <input type="text" class="form-control" value="thanh toán khi nhận hàng" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-7">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="min-width: 100px;">Sản phẩm</th>
+                                            <th scope="col" style="min-width: 200px;">Tên điện thoại</th>
+                                            <th scope="col" style="min-width: 100px;">Giá</th>
+                                            <th scope="col" style="min-width: 100px;">Số lượng</th>
+                                            <th scope="col" style="min-width: 100px;">Thành tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center mt-2">
+                                                    <img src="img/a35_den.jpg" class="img-fluid" style="width: 120px; height: 80px;" alt="">
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div>
+                                                    <p class="mb-0 mt-3">Samsung Glaxy A35</p>
+                                                    <p>Đen + 4GB/64GB</p>
+                                                </div>
+                                            </td>
+                                            <td class="py-5">15.000.000đ</td>
+                                            <td class="py-5  text-center">1</td>
+                                            <td class="py-5">15.000.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center mt-2">
+                                                    <img src="img/iphone14_timnhat.jpg" class="img-fluid" style="width: 120px; height: 80px;" alt="">
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div>
+                                                    <p class="mb-0 mt-3">Iphone 14</p>
+                                                    <p>Tím nhạt + 4GB/64GB</p>
+                                                </div>
+                                            </td>
+                                            <td class="py-5">20.000.000đ</td>
+                                            <td class="py-5 text-center">1</td>
+                                            <td class="py-5">20.000.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center mt-2">
+                                                    <img src="img/note13_vang.jpg" class="img-fluid" style="width: 120px; height: 80px;" alt="">
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div>
+                                                    <p class="mb-0 mt-3">Xiaomi Redmi Note 13</p>
+                                                    <p>Vàng + 4GB/64GB</p>
+                                                </div>
+                                            </td>
+                                            <td class="py-5">9.000.000đ</td>
+                                            <td class="py-5  text-center">1</td>
+                                            <td class="py-5">9.000.000đ</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-light rounded">
+                                <div class="p-4">
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <h5 class="mb-0 me-4">Tạm tính:</h5>
+                                        <p class="mb-0">44.000.000đ</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="mb-0 me-4">Phí giao hàng:</h5>
+                                        <div class="">
+                                            <p class="mb-0">Miễn phí</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-4 mb-4 border-top border-bottom d-flex justify-content-between">
+                                    <h5 class="mb-0 ps-4 me-4">Tổng tiền:</h5>
+                                    <p class="mb-0 pe-4">44.000.000đ</p>
+                                </div>
+                            </div>
+                            <div class="row g-4 text-center align-items-center justify-content-center pt-4">
+                                <button type="button" class="btn border-secondary py-3 px-4 w-100 text-primary">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Thanh toán End -->
+        
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5">
+            <div class="container py-3">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#" style="text-decoration: none;"><h1 class="text-primary mb-0">SHOP ĐCHPH</h1></a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mx-auto">
+                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="email" placeholder="Email của bạn">
+                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Đăng ký ngay</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Các trang chính sách</h4>
+                            <a class="btn-link" href="">Chính sách bảo hành</a>
+                            <a class="btn-link" href="">Chính sách dùng thử - Đổi trả sản phẩm</a>
+                            <a class="btn-link" href="">Chính sách đặt hàng</a>
+                            <a class="btn-link" href="">Chính sách bảo mật thông tin</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Các trang thông tin</h4>
+                            <a class="btn-link" href="">Hướng dẫn mua hàng từ xa</a>
+                            <a class="btn-link" href="">Hướng dẫn thanh toán</a>
+                            <a class="btn-link" href="">Tuyển dụng</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Thông tin liên hệ</h4>
+                            <p>Hotline: 090 154 8888</p>
+                            <p>Kỹ thuật, bảo hành: 090 154 9999</p>
+                            <p>Giờ làm việc: 08h30 - 22h00</p>
+                            <p>Giờ tiếp nhận BH: 10h00 - 17h30</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Địa chỉ liên hệ</h4>
+                            <p>Cơ sở 1: Số 8 Ngõ 120 Thái Hà, Đống Đa, HN</p>
+                            <p>Cơ sở 2: Số 20 Ngõ 60 Cầu Giấy, Cầu Giấy, HN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
