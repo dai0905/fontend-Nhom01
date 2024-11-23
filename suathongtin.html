@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sua thong tin ca nhan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar start -->
+        <div class="container-fluid bg-white" style="position: sticky; top: 0; z-index: 1000;">
+            <div class="container mt-3">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <a href="trangchu.html" class="navbar-brand"><h1 class="text-primary display-6">SHOP ĐCHPH</h1></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="#" class="nav-item nav-link">Apple</a>
+                            <a href="#" class="nav-item nav-link">Sam sung</a>
+                            <a href="#" class="nav-item nav-link">Xiaomi</a>
+                            <a href="#" class="nav-item nav-link">Vivo</a>
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <form class="me-4">
+                                <div class="input-group d-flex">
+                                    <input type="search" class="form-control" placeholder="Nhập từ khóa" name="">
+                                    <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                            <a href="giohang.html" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-cart fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="dangnhap.html" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!--offcanvas start-->
+        <div class="offcanvas offcanvas-start" id="demo" style="width: 250px;">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title"></h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="navbar">
+                    <div class="navbar-nav pt-4">
+                        <a href="thongtincanhan.html" class="nav-item nav-link rounded-pill">
+                            <i class="fas fa-user fa-2x"></i>
+                            <span>Thông tin tài khoản</span>
+                        </a>
+                        <a href="theodoidonhang.html" class="nav-item nav-link">
+                            <i class="fas fa-clipboard-list fa-2x"></i>
+                            <span>Đơn hàng</span>
+                        </a>
+                        <a href="thaydoimatkhau.html" class="nav-item nav-link">
+                            <i class="fas fa-key fa-2x"></i>
+                            <span>Đổi mật khẩu</span>
+                        </a>
+                        <a href="dangnhap.html" class="nav-item nav-link">
+                            <i class="fas fa-sign-out-alt fa-2x"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--offcanvas end-->
+
+        <!--nav and content start-->
+        <div class="container-fluid row">
+            <div class="col-xl-2 d-none d-xl-block border">
+                <nav class="navbar">
+                    <div class="navbar-nav pt-4">
+                        <a href="thongtincanhan.html" class="nav-item nav-link rounded-pill">
+                            <i class="fas fa-user fa-2x"></i>
+                            <span>Thông tin tài khoản</span>
+                        </a>
+                        <a href="theodoidonhang.html" class="nav-item nav-link">
+                            <i class="fas fa-clipboard-list fa-2x"></i>
+                            <span>Đơn hàng</span>
+                        </a>
+                        <a href="thaydoimatkhau.html" class="nav-item nav-link">
+                            <i class="fas fa-key fa-2x"></i>
+                            <span>Đổi mật khẩu</span>
+                        </a>
+                        <a href="dangnhap.html" class="nav-item nav-link">
+                            <i class="fas fa-sign-out-alt fa-2x"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-xl-10">
+                <div class="container my-5">
+                    <h1 class="text-center mb-4">Sửa thông tin cá nhân</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <form>
+                                <div class="form-group">
+                                    <label for="full-name">Họ và tên:</label>
+                                    <input type="text" class="form-control" id="full-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại:</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Địa chỉ:</label>
+                                    <input type="text" class="form-control" id="address">
+                                </div>
+                                <div class="d-flex">
+                                    <button type="submit" class="btn btn-primary w-100 me-5">Cập nhật</button>
+                                    <a href="thongtincanhan.html" class="btn btn-secondary w-100">Quay lại</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--nav and content end-->
+        
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5">
+            <div class="container py-3">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#" style="text-decoration: none;"><h1 class="text-primary mb-0">SHOP ĐCHPH</h1></a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mx-auto">
+                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="email" placeholder="Email của bạn">
+                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Đăng ký ngay</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Các trang chính sách</h4>
+                            <a class="btn-link" href="">Chính sách bảo hành</a>
+                            <a class="btn-link" href="">Chính sách dùng thử - Đổi trả sản phẩm</a>
+                            <a class="btn-link" href="">Chính sách đặt hàng</a>
+                            <a class="btn-link" href="">Chính sách bảo mật thông tin</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Các trang thông tin</h4>
+                            <a class="btn-link" href="">Hướng dẫn mua hàng từ xa</a>
+                            <a class="btn-link" href="">Hướng dẫn thanh toán</a>
+                            <a class="btn-link" href="">Tuyển dụng</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Thông tin liên hệ</h4>
+                            <p>Hotline: 090 154 8888</p>
+                            <p>Kỹ thuật, bảo hành: 090 154 9999</p>
+                            <p>Giờ làm việc: 08h30 - 22h00</p>
+                            <p>Giờ tiếp nhận BH: 10h00 - 17h30</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Địa chỉ liên hệ</h4>
+                            <p>Cơ sở 1: Số 8 Ngõ 120 Thái Hà, Đống Đa, HN</p>
+                            <p>Cơ sở 2: Số 20 Ngõ 60 Cầu Giấy, Cầu Giấy, HN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
